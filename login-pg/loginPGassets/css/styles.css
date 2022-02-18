@@ -118,7 +118,7 @@ div.loginpg_glassFrame {
   background-color: rgba(255,255,255,0.3);
   border-radius: 40px;
   box-shadow: 0 0 20px 5px rgba(0,0,0,0.3);
-  z-index: 200;
+  z-index: 2000;
 }
 
 div.loginpg_container {
@@ -162,6 +162,11 @@ footer.loginpg_footer {
   main.loginpg_outer {
     padding: 1vw;
   }
+
+  div.coverGradient ,
+div.loginpg_glassFrame {
+  display: none;
+}
 }
 
 

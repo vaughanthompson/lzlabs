@@ -1,0 +1,586 @@
+/*
+* generated using stylus - don't alter
+*/
+@charset "UTF-8";
+@font-face {
+  font-family: "Manrope VF";
+  src: url("/loginPGassets/fonts/manrope/fonts/variable/ManropeGX.ttf") format("truetype-variations");
+  font-style: normal;
+  font-weight: 200 800; }
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/loginPGassets/fonts/manrope/fonts/web/Manrope-ExtraBold.woff2") format("woff2"),
+  url("/loginPGassets/fonts/manrope/fonts/ttf/Manrope-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 800; }
+@font-face {
+  font-family: "Manrope";
+  src: url("/loginPGassets/fonts/manrope/fonts/web/Manrope-Bold.woff2") format("woff2"),
+  url("/loginPGassets/fonts/manrope/fonts/ttf/Manrope-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700; }
+@font-face {
+  font-family: "Manrope";
+  src: url("/loginPGassets/fonts/manrope/fonts/web/Manrope-SemiBold.woff2") format("woff2"),
+  url("/loginPGassets/fonts/manrope/fonts/ttf/Manrope-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600; }
+@font-face {
+  font-family: "Manrope";
+  src: url("/loginPGassets/fonts/manrope/fonts/web/Manrope-Medium.woff2") format("woff2"),
+  url("/loginPGassets/fonts/manrope/fonts/ttf/Manrope-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500; }
+@font-face {
+  font-family: "Manrope";
+  src: url("/loginPGassets/fonts/manrope/fonts/web/Manrope-Regular.woff2") format("woff2"),
+  url("/loginPGassets/fonts/manrope/fonts/ttf/Manrope-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: "Manrope";
+  src: url("/loginPGassets/fonts/manrope/fonts/web/Manrope-Light.woff2") format("woff2"),
+  url("/loginPGassets/fonts/manrope/fonts/ttf/Manrope-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300; }
+@font-face {
+  font-family: "Manrope";
+  src: url("/loginPGassets/fonts/manrope/fonts/web/Manrope-ExtraLight.woff2") format("woff2"),
+  url("/loginPGassets/fonts/manrope/fonts/ttf/Manrope-ExtraLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 200; }
+
+/*
+*
+*
+*
+*
+* start custom stylesheets
+*
+*
+*
+*
+*
+*/
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Manrope VF', Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+body {
+  color: rgba(252,80,1,1.0); /* #fc5001 */
+  background-color: rgba(61,67,68,1.0); /* #3d4344 */
+  color: #fff;
+  font-size: 16px;
+}
+hr {
+  border: none;
+  border-bottom: 1px solid #333;
+}
+
+a:link, a:visited {
+  color:rgba(61,67,68,1.0);
+}
+a:active, a:hover {
+  color:rgba(252,80,1,1.0);
+}
+
+main.loginpg_outer {
+  position: relative;
+
+}
+div.momentumPattern {
+  z-index: 2;
+  position: fixed;
+  background-image: url(/loginPGassets/images/elements/rgb/momentum-landscape-CLR.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size:cover;
+  bottom:0;
+  width:85vw;
+  height: 50vh;
+}
+
+div.coverGradient {
+    position: fixed;
+    background-blend-mode: multiply;
+    background: linear-gradient(to bottom left, rgba(61,67,68,0),rgba(61,67,68,0), rgba(0,0,0,0.95));
+    z-index:100;
+    width:100vw;
+    height: 100vh;
+}
+
+
+div.loginpg_glassFrame {
+  padding: 1.75vw;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 40px;
+  box-shadow: 0 0 20px 5px rgba(0,0,0,0.3);
+  z-index: 200;
+}
+
+div.loginpg_container {
+  padding: 1.75vw 1.5vw 1vw 1.5vw;
+  background-color: rgba(255,255,255,1.0);
+  border-radius: 15px;
+  box-shadow: 0 0 2vw 10px rgba(0,0,0,0.5);
+  color: rgba(61,67,68,1.0); /* #3d4344 */
+}
+
+header.loginpg_mastHead {
+  border-bottom: 2px solid rgba(61,67,68,1.0);
+  padding-bottom: 1em;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  margin-bottom: 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+header.loginpg_mastHead img:first-child {
+  width:80px;
+}
+header.loginpg_mastHead img:last-child {
+  width:100px;
+}
+
+
+footer.loginpg_footer {
+  margin-top: 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.9em;
+}
+
+
+
+@media screen and (max-width: 800px) { /* large ph */
+  main.loginpg_outer {
+    padding: 1vw;
+  }
+}
+
+
+@media screen and (min-width: 800px) {
+  main.loginpg_outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  div.loginpg_glassFrame {
+    width:40vw;
+  }
+
+  div.loginpg_content section {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+
+
+
+
+  div.content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -o-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+  div.content > section {
+    -ms-flex-preferred-size: 70%;
+    flex-basis: 70%;
+    margin-right: 1.5vw;
+  }
+  div.content > section:last-child {
+    margin-right: 0;
+  }
+
+  article.grid.allCols div.content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-lines: single;
+    -moz-box-lines: single;
+    -o-box-lines: single;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: start;
+    -o-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  article.grid.allCols div.content > section {
+    margin-right: 0.8vw;
+  }
+  article.grid.allCols div.content > section:last-child {
+    margin-right: 0;
+  }
+
+}
+
+
+a.ctaButton {
+  border-radius: 0;
+  background: none;
+  color: #333;
+  font-size: 1.1em;
+  font-weight: 700;
+  border-bottom: 2px solid #333;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 0.8vw;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-box;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  white-space: normal;
+}
+a.ctaButton i {
+  margin-left: 15px;
+  margin-right: 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+a.ctaButton i:before {
+  color: #333;
+}
+a.ctaButton:hover,
+a.ctaButton:hover > i:before {
+  color: #f00;
+  border-color: #f00;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+a.ctaButton:hover i {
+  margin-left: 25px;
+  margin-right: 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+#priNav a.majorCTA {
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.45);
+  -webkit-box-shadow: 0px 2px 2px #000;
+  box-shadow: 0px 2px 2px #000;
+}
+div.cta > div {
+  text-align: center;
+}
+div.cta > div > h6 {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 750px) {
+  a.majorCTA {
+    font-size: 1.1em;
+    font-weight: 800;
+    padding: 3vw 7vw 3vw 7vw;
+  }
+  a.ctaButton {
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+img.med {
+  width: 75%;
+  margin: 0px auto;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  margin-bottom: 0.8vw;
+}
+h1 {
+  font-weight: 1000;
+  font-size: 3.5em;
+  line-height: 105%;
+  letter-spacing: -0.05em;
+}
+h1 span {
+  font-weight: 300;
+  letter-spacing: -0.02em;
+}
+h2 {
+  font-weight: 1000;
+  font-size: 2.7em;
+  line-height: 115%;
+  letter-spacing: -0.035em;
+}
+h2 span {
+  font-weight: 300;
+  letter-spacing: -0.015em;
+}
+h3 {
+  font-weight: 1000;
+  font-size: 2em;
+  line-height: 115%;
+  letter-spacing: -0.035em;
+}
+h3 span {
+  font-weight: 300;
+  letter-spacing: -0.01em;
+}
+h4 {
+  font-weight: 600;
+  font-size: 1.7em;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+}
+h4 span {
+  font-weight: 400;
+}
+h5 {
+  font-weight: 700;
+  font-size: 1.3em;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+}
+h5 span {
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+h6 {
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 130%;
+  letter-spacing: -0.015em;
+}
+p {
+  font-size: 1em;
+  line-height: 140%;
+}
+strong {
+  font-weight: 800;
+  letter-spacing: -0.015em;
+}
+.small {
+  font-size: 0.7em;
+}
+body > footer p a {
+  font-size: 1em;
+  line-height: 160%;
+}
+body > footer h6 {
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 120%;
+  color: #f00;
+}
+@media screen and (max-width: 1100px) {
+  h1 {
+    font-size: 1.8em;
+    line-height: 110%;
+  }
+  *.picturefill-background h1 {
+    font-size: 2.2em;
+    line-height: 110%;
+  }
+  h2 {
+    font-size: 1.8em;
+    line-height: 110%;
+  }
+  h3 {
+    font-size: 1.8em;
+    line-height: 110%;
+  }
+  h4 {
+    font-size: 1.6em;
+    line-height: 110%;
+  }
+  h5 {
+    font-size: 1.2em;
+    line-height: 110%;
+  }
+  h6 {
+    font-size: 1.1em;
+    line-height: 110%;
+  }
+  p {
+    font-size: 1em;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin-bottom: 0.5em;
+  }
+}
+.omni-resort,
+a.omni-resort h5 {
+  color: #96e096;
+}
+.omni-attract,
+a.omni-attract h5 {
+  color: #d898be;
+}
+.omni-loyalty,
+a.omni-loyalty h5 {
+  color: #e4565f;
+}
+.omni-transact,
+a.omni-transact h5 {
+  color: #d3dd97;
+}
+.omni-curate,
+a.omni-curate h5 {
+  color: #d6b699;
+}
+a.omni-data,
+a.omni-data h5 {
+  color: #97dbd8;
+}
+nav a:hover {
+  border-bottom-color: #f00 !important;
+}
+nav a.omni-resort:hover {
+  border-bottom-color: #96e096 !important;
+}
+nav a.omni-attract:hover {
+  border-bottom-color: #d898be !important;
+}
+nav a.omni-loyalty:hover {
+  border-bottom-color: #e4565f !important;
+}
+nav a.omni-transact:hover {
+  border-bottom-color: #d3dd97 !important;
+}
+nav a.omni-curate:hover {
+  border-bottom-color: #d6b699 !important;
+}
+nav a.omni-data:hover {
+  border-bottom-color: #97dbd8 !important;
+}
+/* effects */
+.multiply {
+  background-blend-mode: multiply;
+/*background-color: blackAlp25*/
+}
+.bgoverlay0 {
+  background-color: rgba(0,0,0,0.1) !important;
+}
+.bgoverlay1 {
+  background-color: rgba(0,0,0,0.25) !important;
+}
+.bgoverlay2 {
+  background-color: rgba(0,0,0,0.5) !important;
+}
+.bgoverlay3 {
+  background-color: rgba(0,0,0,0.75) !important;
+}
+.multiplyBlack {
+  background-color: #333;
+}
+.multiplyRed {
+  background-color: #f00;
+}
+.multiplyGreen {
+  background-color: #2fcd15;
+}
+.lighten1 {
+  background-color: rgba(255,255,255,0.7);
+  background-blend-mode: overlay;
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+}
+.lighten2 {
+  background-color: rgba(255,255,255,0.5);
+  background-blend-mode: overlay;
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+}
+.greyscale {
+  background-color: rgba(0,0,0,0.3);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.greyscaleLt {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  -webkit-transition: 2.5s;
+  transition: 2.5s;
+}
+.burnColor {
+  background-blend-mode: color-burn;
+  opacity: 1;
+  -ms-filter: none;
+  -webkit-filter: none;
+          filter: none;
+}
+.gradient0 {
+  background-blend-mode: multiply;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,0.75)), color-stop(rgba(0,0,0,0.05)), to(rgba(0,0,0,0.05)));
+  background: linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0.05), rgba(0,0,0,0.05));
+}
+.gradient1 {
+  background-blend-mode: multiply;
+  background: -webkit-gradient(linear, left top, right top, from(#f00), to(rgba(0,0,0,0.5)));
+  background: linear-gradient(to right, #f00, rgba(0,0,0,0.5));
+}
+.gradient2 {
+  background-blend-mode: multiply;
+  background: -webkit-gradient(linear, left top, right top, from(#000), color-stop(rgba(0,0,0,0.5)), to(rgba(0,0,0,0.1)));
+  background: linear-gradient(to right, #000, rgba(0,0,0,0.5), rgba(0,0,0,0.1));
+}
+.gradient3 {
+  background-blend-mode: multiply;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255,255,255,0.75)), color-stop(rgba(255,255,255,0.75)), color-stop(rgba(255,255,255,0.5)), to(rgba(255,255,255,0.1)));
+  background: linear-gradient(to right, rgba(255,255,255,0.75), rgba(255,255,255,0.75), rgba(255,255,255,0.5), rgba(255,255,255,0.1));
+}
+@media screen and (max-width: 1100px) {
+  .gradient3 {
+    background-blend-mode: multiply;
+    background: -webkit-gradient(linear, left top, right bottom, from(#fff), color-stop(rgba(255,255,255,0.9)), color-stop(rgba(255,255,255,0.9)), to(rgba(255,255,255,0.1)));
+    background: linear-gradient(to bottom right, #fff, rgba(255,255,255,0.9), rgba(255,255,255,0.9), rgba(255,255,255,0.1));
+  }
+}
+.blur {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+@media screen and (min-width: 750px) {
+  .m {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 750px) {
+  .d {
+    display: none !important;
+  }
+}

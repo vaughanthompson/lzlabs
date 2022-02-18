@@ -163,8 +163,8 @@ footer.loginpg_footer {
     padding: 1vw;
   }
 
-  div.coverGradient ,
-div.loginpg_glassFrame {
+  div.coverGradient,
+  div.momentumPattern {
   display: none;
 }
 }
